@@ -1,12 +1,10 @@
-package com.ch.test.domain.repository;
+package com.ch.test.domain.service;
 
 import com.ch.test.domain.entity.aggregateRoot.PostEntity;
 
 import java.util.List;
 
-public interface IPostRepo {
-    void save(PostEntity postEntity);
+public interface IPostDomainService {
 
     List<PostEntity> queryPosts();
-
 }

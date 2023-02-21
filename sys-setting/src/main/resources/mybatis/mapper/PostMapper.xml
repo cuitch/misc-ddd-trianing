@@ -9,4 +9,11 @@
         values(#{uuid},#{name},#{groupId},#{seq},#{createUserId},#{updateUserId},#{createTime},#{updateTime});
     </insert>
 
+    <select id="queryPosts" parameterType="map" resultType="com.ch.test.infrastructure.po.PostPO">
+        select *
+        from `post`
+        where 1=1
+        <if test="name != null and name !=''">and name=#{name}</if>
+    </select>
+
 </mapper>
