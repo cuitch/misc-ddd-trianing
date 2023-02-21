@@ -1,0 +1,53 @@
+package com.aia.training.domain.entity;
+
+import com.aia.training.controller.co.PostGroupCreateCmd;
+import com.aia.training.domain.event.PostGroupCreatedEvent;
+import com.aia.training.infrastructure.conventor.PostGroupConventor;
+import com.aia.training.infrastructure.tunnel.database.service.PostGroupRepo;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.beans.BeanUtils;
+
+import javax.annotation.Resource;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class PostGroupEntity {
+    private Long id;
+
+    private String uuid;
+
+    private String name;
+
+    private Integer seq;
+
+    private Long createUserId;
+
+    private Long updateUserId;
+
+    private Long createdTime;
+
+    private Long updatedTime;
+
+    @Resource
+    private PostGroupRepo repo;
+
+    private void checkDuplicateNameCheck(String name){
+        //query Database
+    }
+
+    public PostGroupCreatedEvent createPostGroup(PostGroupCreateCmd cmd) {
+        checkDuplicateNameCheck(cmd.getGroupName());
+        repo.save(PostGroupConventor.toPo(this));
+        return new PostGroupCreatedEvent("Post Group Created!");
+    }
+
+    public PostGroupEntity toEntity(){
+        PostGroupEntity postGroup = new PostGroupEntity();
+        BeanUtils.copyProperties(this,postGroup);
+        return postGroup;
+    }
+
+}
