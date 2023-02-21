@@ -1,4 +1,4 @@
-package com.aia.training.domain.po;
+package com.aia.training.infrastructure.po;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

@@ -1,6 +1,6 @@
 package com.aia.training.infrastructure.mapper;
 
-import com.aia.training.domain.po.PostPO;
+import com.aia.training.infrastructure.po.PostPO;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
