@@ -1,13 +1,12 @@
 package com.ch.test.application.service;
 
 import com.ch.test.controller.co.add.PostGroupCreateCmd;
-import com.ch.test.domain.service.PostGroupDomainService;
+import com.ch.test.controller.co.delete.PostGroupDeleteCmd;
+import com.ch.test.domain.event.PostGroupCreatedEvent;
 import org.springframework.stereotype.Component;
-
-import javax.annotation.Resource;
 
 @Component
 public interface IPostGroupAppService {
     void createPostGroup(PostGroupCreateCmd cmd);
-
+    void deletePostGroup(PostGroupDeleteCmd cmd);
 }
