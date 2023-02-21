@@ -1,7 +1,8 @@
 package com.ch.test.controller.facade;
 
-import com.ch.test.application.service.PostGroupAppService;
+import com.ch.test.application.service.IPostGroupAppService;
 import com.ch.test.controller.co.add.PostGroupCreateCmd;
+import com.ch.test.controller.dto.MyResponse;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -10,9 +11,10 @@ import javax.annotation.Resource;
 @RequestMapping("/post-group")
 public class PostGroupController {
     @Resource
-    private PostGroupAppService appService;
+    private IPostGroupAppService appService;
     @PostMapping("/add")
-    public void createPostGroup(PostGroupCreateCmd cmd){
-
+    public MyResponse createPostGroup(PostGroupCreateCmd cmd){
+        appService.createPostGroup(cmd);
+        return MyResponse.success("200","success",null);
     }
 }

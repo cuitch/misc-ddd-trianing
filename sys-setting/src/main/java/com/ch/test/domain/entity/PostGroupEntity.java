@@ -3,7 +3,7 @@ package com.ch.test.domain.entity;
 import com.ch.test.controller.co.add.PostGroupCreateCmd;
 import com.ch.test.domain.event.PostGroupCreatedEvent;
 import com.ch.test.infrastructure.conventor.PostGroupConventor;
-import com.ch.test.infrastructure.tunnel.database.service.PostGroupRepo;
+import com.ch.test.infrastructure.tunnel.database.service.IPostGroupRepo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -32,7 +32,7 @@ public class PostGroupEntity {
     private Long updatedTime;
 
     @Resource
-    private PostGroupRepo repo;
+    private IPostGroupRepo repo;
 
     private void checkDuplicateNameCheck(String name){
         //query Database
