@@ -38,7 +38,7 @@ public class PostGroupEntity {
 
     private Long updatedTime;
 
-    private List<PostEntity> posts;
+    private List<PostPO> posts;
     @Resource
     private IPostGroupRepo postGroupRepo;
 
