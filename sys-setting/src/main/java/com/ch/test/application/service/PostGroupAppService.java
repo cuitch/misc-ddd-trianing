@@ -1,6 +1,6 @@
-package com.aia.training.application.service;
+package com.ch.test.application.service;
 
-import com.aia.training.controller.co.PostGroupCreateCmd;
+import com.ch.test.controller.co.add.PostGroupCreateCmd;
 
 public interface PostGroupAppService {
     void createPostGroup(PostGroupCreateCmd cmd);

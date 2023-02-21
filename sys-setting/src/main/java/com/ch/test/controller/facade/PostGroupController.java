@@ -1,7 +1,7 @@
-package com.aia.training.controller.facade;
+package com.ch.test.controller.facade;
 
-import com.aia.training.application.service.PostGroupAppService;
-import com.aia.training.controller.co.PostGroupCreateCmd;
+import com.ch.test.application.service.PostGroupAppService;
+import com.ch.test.controller.co.add.PostGroupCreateCmd;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 

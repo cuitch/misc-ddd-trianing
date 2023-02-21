@@ -1,9 +1,9 @@
-package com.aia.training.infrastructure.tunnel.database.service.impl;
+package com.ch.test.infrastructure.tunnel.database.service.impl;
 
 
-import com.aia.training.infrastructure.po.PostGroupPO;
-import com.aia.training.infrastructure.tunnel.database.service.PostGroupRepo;
-import com.aia.training.infrastructure.tunnel.database.service.mapper.PostGroupMapper;
+import com.ch.test.infrastructure.po.PostGroupPO;
+import com.ch.test.infrastructure.tunnel.database.service.PostGroupRepo;
+import com.ch.test.infrastructure.tunnel.database.service.mapper.PostGroupMapper;
 
 import javax.annotation.Resource;
 

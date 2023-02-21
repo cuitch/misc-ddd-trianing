@@ -1,4 +1,4 @@
-package com.aia.training.infrastructure.po;
+package com.ch.test.infrastructure.po;
 
 import lombok.Data;
 

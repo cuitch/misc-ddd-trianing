@@ -1,4 +1,4 @@
-package com.aia.training.domain.event;
+package com.ch.test.domain.event;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

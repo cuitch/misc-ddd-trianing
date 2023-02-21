@@ -1,6 +1,6 @@
-package com.aia.training.infrastructure.tunnel.database.service;
+package com.ch.test.infrastructure.tunnel.database.service;
 
-import com.aia.training.infrastructure.po.PostGroupPO;
+import com.ch.test.infrastructure.po.PostGroupPO;
 
 public interface PostGroupRepo {
 

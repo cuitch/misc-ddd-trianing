@@ -1,9 +1,10 @@
-package com.aia.training.domain.service.impl;
+package com.ch.test.domain.service.impl;
 
-import com.aia.training.controller.co.PostGroupCreateCmd;
-import com.aia.training.domain.entity.PostGroupEntity;
-import com.aia.training.domain.factory.PostGroupEntityFactory;
-import com.aia.training.domain.service.PostGroupDomainService;
+import com.ch.test.controller.co.add.PostGroupCreateCmd;
+import com.ch.test.domain.entity.PostGroupEntity;
+import com.ch.test.domain.factory.PostGroupEntityFactory;
+import com.ch.test.domain.service.PostGroupDomainService;
+import com.ch.test.domain.entity.PostGroupEntity;
 
 public class PostGroupDomainServiceImpl implements PostGroupDomainService {
     @Override

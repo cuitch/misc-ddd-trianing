@@ -1,9 +1,9 @@
-package com.aia.training.domain.entity;
+package com.ch.test.domain.entity;
 
-import com.aia.training.controller.co.PostGroupCreateCmd;
-import com.aia.training.domain.event.PostGroupCreatedEvent;
-import com.aia.training.infrastructure.conventor.PostGroupConventor;
-import com.aia.training.infrastructure.tunnel.database.service.PostGroupRepo;
+import com.ch.test.controller.co.add.PostGroupCreateCmd;
+import com.ch.test.domain.event.PostGroupCreatedEvent;
+import com.ch.test.infrastructure.conventor.PostGroupConventor;
+import com.ch.test.infrastructure.tunnel.database.service.PostGroupRepo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

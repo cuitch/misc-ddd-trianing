@@ -1,8 +1,8 @@
-package com.aia.training.infrastructure.conventor;
+package com.ch.test.infrastructure.conventor;
 
 
-import com.aia.training.domain.entity.PostGroupEntity;
-import com.aia.training.infrastructure.po.PostGroupPO;
+import com.ch.test.domain.entity.PostGroupEntity;
+import com.ch.test.infrastructure.po.PostGroupPO;
 import org.springframework.beans.BeanUtils;
 
 public class PostGroupConventor {

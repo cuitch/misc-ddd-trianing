@@ -1,6 +1,6 @@
-package com.aia.training.infrastructure.tunnel.database.service.mapper;
+package com.ch.test.infrastructure.tunnel.database.service.mapper;
 
-import com.aia.training.infrastructure.po.PostGroupPO;
+import com.ch.test.infrastructure.po.PostGroupPO;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

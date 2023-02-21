@@ -1,6 +1,6 @@
-package com.aia.training.domain.factory;
+package com.ch.test.domain.factory;
 
-import com.aia.training.domain.entity.PostGroupEntity;
+import com.ch.test.domain.entity.PostGroupEntity;
 
 public class PostGroupEntityFactory {
     public static PostGroupEntity getPostGroupEntity(){
