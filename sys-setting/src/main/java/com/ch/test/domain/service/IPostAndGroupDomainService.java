@@ -4,7 +4,7 @@ import com.ch.test.domain.entity.aggregateRoot.PostEntity;
 
 import java.util.List;
 
-public interface IPostDomainService {
+public interface IPostAndGroupDomainService {
 
     List<PostEntity> queryPosts();
 }

@@ -7,7 +7,7 @@ import com.ch.test.controller.co.query.PostQueryCmd;
 import com.ch.test.controller.dto.PostDTO;
 import com.ch.test.domain.entity.aggregateRoot.PostEntity;
 import com.ch.test.domain.factory.PostFactory;
-import com.ch.test.domain.service.IPostDomainService;
+import com.ch.test.domain.service.IPostAndGroupDomainService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +18,7 @@ import java.util.List;
 public class PostAppServiceImpl implements IPostAppService {
 
     @Autowired
-    private IPostDomainService postDomainService;
+    private IPostAndGroupDomainService postDomainService;
 
     @Override
     public void createPost(PostCreateCmd postCreateCmd) {

@@ -2,6 +2,7 @@ package com.ch.test.domain.entity;
 
 import com.ch.test.controller.co.delete.PostGroupDeleteCmd;
 import com.ch.test.domain.event.PostGroupCreatedEvent;
+import com.ch.test.domain.event.PostGroupDeletedEvent;
 import com.ch.test.domain.repository.IPostRepo;
 import com.ch.test.infrastructure.convertor.PostGroupConvertor;
 import com.ch.test.infrastructure.exception.MyException;
@@ -61,7 +62,7 @@ public class PostGroupEntity {
         return postGroup;
     }
 
-    public PostGroupDeleteCmd deletePostGroup(){
+    public PostGroupDeletedEvent deletePostGroup(){
         List<PostPO> allPosts = this.getAllPosts();
         if(!CollectionUtils.isEmpty(allPosts)){
             throw new MyException("not a empty post group");
@@ -74,7 +75,7 @@ public class PostGroupEntity {
 
         this.minusTheSeqAfter();
         postGroupRepo.deleteOneById(this.getId());
-        return new PostGroupDeleteCmd();
+        return new PostGroupDeletedEvent();
     }
 
     public void minusTheSeqAfter(){
